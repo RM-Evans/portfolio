@@ -20,7 +20,8 @@
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap'); */
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -36,6 +37,8 @@
     display: flex;
     list-style: none;
 }
+
+
 
 .nav-links {
     font-family: 'Alata', sans-serif;
@@ -76,6 +79,7 @@ color: black;
     border: solid black 1px;
     border: none;
     background:none;
+    margin: 10px 10px 0;
     height: 70px;
     width: 70px;
     border-radius: 30%;
@@ -83,6 +87,22 @@ color: black;
 
     
     
+}
+.hamburger-menu img {
+    height: 40px;
+    width: 40px;
+}
+
+@media (min-width: 800px) {
+    .hamburger-menu {
+        display: none;
+}
+}
+
+@media (max-width:800px ){
+#nav-link-container { 
+display: none;
+}
 }
 
 

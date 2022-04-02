@@ -9,9 +9,9 @@ import Experience from "./Experience.vue"
 
     <h1 id="landing-name">I'm Michael Evans</h1>
 
-    <h2 class="landing-skill">Front End Developer</h2>
+    <h2 class="landing-skill">I am a <span class="semibold-text">Front End Developer</span> and <span class="semibold-text">Designer</span></h2>
 
-    <h2 class="landing-skill">Designer</h2>
+    <!-- <h2 class="landing-skill">Designer</h2> -->
 </div>
 </div>
 
@@ -20,11 +20,15 @@ import Experience from "./Experience.vue"
 </template>
 
 <style scoped>
+.semibold-text {
+    font-weight: 600;
+}
 .landing{
 min-height: calc(100vh - 100px);
 /* min-width: 100vw;
 min-height: 100vh; */
 border: red 1px solid;
+padding: 0 30px;
 }
 #landing-intro{
 display: flex;

@@ -3,7 +3,7 @@ import ExperienceResume from './ExperienceResume.vue';
 </script>
 <template>
     <div id="experience-block">  
-        Give me some experience, I really need a job man
+    
     
     <h2>Experience</h2>
     <ExperienceResume />
@@ -12,6 +12,8 @@ import ExperienceResume from './ExperienceResume.vue';
 
 <style scoped>
 #experience-block {
-min-height: 100vh;
+    text-align: start;
+    padding: 20px 30px;
+    min-height: 100vh;
 }
 </style>
