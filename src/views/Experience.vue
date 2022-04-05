@@ -7,6 +7,7 @@ import ExperienceResume from './ExperienceResume.vue';
     
     <h2>Experience</h2>
     <ExperienceResume />
+    <button>Learn More</button>
 </div>
 </template>
 

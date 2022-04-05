@@ -41,7 +41,7 @@ const resumeItems = ref([
 
 <template>
     <li v-for="resumeItem in resumeItems" class="resume-items">
-    <span class="resume-date">{{ resumeItem.resumeEntryDate }} </span>- {{ resumeItem.resumeEntryDetails }}
+    <span class="resume-date">{{ resumeItem.resumeEntryDate }}: </span> {{ resumeItem.resumeEntryDetails }}
         </li>
 
 </template>
@@ -49,12 +49,12 @@ const resumeItems = ref([
 <style scoped>
  .resume-items{
     text-align: start;
-    padding: 40px;
+    padding: 30px;
     list-style: none;
     font-size: 18px;
 } 
 
 .resume-date {
-    
+    font-weight: bold;
 }
 </style>

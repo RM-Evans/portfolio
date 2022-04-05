@@ -4,8 +4,8 @@
 
 <template>
 <header class="nav-bar">
-    <img src="../assets/SIGNATURE.png" id="header-icon" >
-    <!-- <h1 id="header-icon">show yourself NAVBOI</h1> -->
+    <!-- <img src="../assets/SIGNATURE.png" id="header-icon" > -->
+    <h2 id="header-icon">Michael Evans</h2>
 
     <ul id="nav-link-container">
     <li class="nav-links"><router-link to="/" class="link-text">HOME</router-link></li>
@@ -26,10 +26,13 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    
 }
+
 #header-icon {
-    height: 60px;
-    padding: 10px;
+    /* height: 60px;
+    padding: 10px; */
+    padding: 30px 10px 0;
 }
 
 #nav-link-container{
