@@ -47,14 +47,26 @@ const resumeItems = ref([
 </template>
 
 <style scoped>
- .resume-items{
+.resume-items{
     text-align: start;
-    padding: 30px;
+    padding: 30px 0;
     list-style: none;
     font-size: 18px;
 } 
 
 .resume-date {
     font-weight: bold;
+}
+
+@media (max-width:1800px){
+    .resume-items {
+    font-size: 2.1vw;
+}
+}
+
+@media (max-width:1000px){
+    .resume-items {
+    font-size: 18px;
+}
 }
 </style>

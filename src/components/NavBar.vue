@@ -32,7 +32,7 @@
 #header-icon {
     /* height: 60px;
     padding: 10px; */
-    padding: 30px 10px 0;
+    padding: 35px 30px 0;
 }
 
 #nav-link-container{

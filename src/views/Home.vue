@@ -1,6 +1,7 @@
 <script setup>
 import Experience from "./Experience.vue"
 import { Icon } from '@iconify/vue';
+import Skills from "./Skills.vue";
 
 </script>
 <template>
@@ -9,7 +10,7 @@ import { Icon } from '@iconify/vue';
 <div id="landing-intro">
     <h2 id="landing-greeting">Hello!</h2>
 
-    <h1 id="landing-name">I'm Michael Evans</h1>
+    <h2 id="landing-name">I'm Michael Evans</h2>
 
     <h2 class="landing-skill">I am a <span class="semibold-text">Front End Developer</span> and <span class="semibold-text">Designer</span></h2>
 
@@ -21,7 +22,7 @@ import { Icon } from '@iconify/vue';
     </div>
 </div>
 </div>
-
+<Skills />
 <Experience />
 
 </template>
@@ -31,26 +32,20 @@ import { Icon } from '@iconify/vue';
     font-weight: 600;
 }
 .landing{
-min-height: calc(100vh - 100px);
-/* min-width: 100vw;
-min-height: 100vh; */
+/* min-height: calc(100vh - 100px); */
+
 /* border: red 1px solid; */
-padding: 0 30px;
+padding: 20px 50px 20px  ;
 }
+
 #landing-intro{
 display: flex;
 flex-direction: column;
 text-align: left;
-font-size: 2vw;
+font-size: 3vw;
 
-/* 
-padding: 5vw 10vw; */
 }
 
-/* #landing-greeting,
-#landing-name {
-    padding-bottom: 20px;
-} */
 
 
 
@@ -61,7 +56,7 @@ padding: 5vw 10vw; */
 
 
 #landing-name {
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 40px;
 }
 
@@ -72,18 +67,64 @@ line-height: 1.69em;
 
 #social-icon-container {
     display: flex;
+
     justify-content: space-around;
-    padding: 50px 0 0;
+    padding: 150px 0 0;
     /* border: red 1px solid; */
+
 }
 
 #social-icon-container a,
 #social-icon-container a:visited  {
- color: #202124;
+    color: #202124;
 }
 .social-icon svg {
     /* border: red 1px solid; */
-    width: 12vw;
-    height: 12vw;
+    width: 11vw;
+    height: 11vw;
 }
+
+@media (min-width:1000px) {
+    #social-icon-container {
+    padding: 200px 0 0;
+}
+}
+
+@media (max-width:850px) {
+    #social-icon-container {
+    padding: 20vh 0 0;
+}}
+
+
+@media (max-width:700px){
+#landing-intro{
+    font-size: 5vw;
+}
+.social-icon svg {
+    /* border: red 1px solid; */
+    width: 20vw;
+    height: 20vw;
+
+}
+    #social-icon-container {
+    padding: 12vh 0 0;
+}
+}
+
+@media (min-width:1400px) {
+    #social-icon-container {
+    padding: 50px 0 0;
+}}
+
+@media (max-width:450px) {
+    #social-icon-container {
+    padding: 20vh 0 0;
+}
+.landing{
+min-height: calc(100vh - 100px);
+
+}
+}
+
+
 </style>
