@@ -7,11 +7,11 @@
     <!-- <img src="../assets/SIGNATURE.png" id="header-icon" > -->
     <h2 id="header-icon">Michael Evans</h2>
 
-    <ul id="nav-link-container">
+    <!-- <ul id="nav-link-container">
     <li class="nav-links"><router-link to="/" class="link-text">HOME</router-link></li>
     <li class="nav-links"><router-link to="About" class="link-text">ABOUT</router-link></li>
     </ul>
-    <button class="hamburger-menu"><img src="../assets/menu_black_24dp.svg"></button>
+    <button class="hamburger-menu"><img src="../assets/menu_black_24dp.svg"></button> -->
 <!-- 750px hamburger -->
     
 </header>
